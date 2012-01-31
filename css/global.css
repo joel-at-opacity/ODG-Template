@@ -1,0 +1,34 @@
+﻿/* GLOBAL RESET */
+@import url("sizes.css");
+@import url("colors.css");
+@import url("buttons.css");
+@import url("controls.css");
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td
+{
+    padding: 0;
+    margin: 0;
+   
+}
+
+a, a img{
+	border: none;
+	text-decoration: none;
+	color: inherit;
+}
+
+body, td, th, input, select, textarea
+{
+    font-family:Tahoma, Helvetica, Arial, Sans-serif;
+    font-size:12px;
+    line-height:20px;
+}
+
+
+body
+{
+ /* define backgrounds here */
+}
+
+
+    

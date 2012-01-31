@@ -1,0 +1,192 @@
+﻿/*
+These are all set to important 
+because any element set to these
+widths is set for a specific reason
+which should override any others.
+*/
+
+.width25pixels
+{
+    width:25px !important;
+}
+
+.width50pixels
+{
+    width:50px !important;
+}
+
+.width75pixels
+{
+    width:75px !important;
+}
+
+.width100pixels
+{
+    width:100px !important;
+}
+
+.width150pixels
+{
+    width:150px !important;
+}
+
+.width200pixels
+{
+    width:200px !important;
+}
+
+.width250pixels
+{
+    width:250px !important;
+}
+
+
+.margin0Pixels
+{
+    margin:0px !important;
+}
+
+.marginTop5Pixels
+{
+    margin-top:5px !important;
+}
+
+.marginTop10Pixels
+{
+    margin-top:10px !important;
+}
+
+
+.marginTop20Pixels
+{
+    margin-top:20px !important;
+}
+
+.marginTop30Pixels
+{
+    margin-top:30px !important;
+}
+
+
+
+.marginBottom5Pixels
+{
+    margin-bottom:5px !important;
+}
+
+.marginBottom10Pixels
+{
+    margin-bottom:10px !important;
+}
+
+
+.marginBottom20Pixels
+{
+    margin-bottom:20px !important;
+}
+
+.marginBottom30Pixels
+{
+    margin-bottom:30px !important;
+}
+
+
+
+
+.marginLeft5Pixels
+{
+    margin-left:5px !important;
+}
+
+.marginLeft10Pixels
+{
+    margin-left:10px !important;
+}
+
+
+.marginLeft20Pixels
+{
+    margin-left:20px !important;
+}
+
+.marginLeft30Pixels
+{
+    margin-left:30px !important;
+}
+
+
+
+.paddingLeft5Pixels
+{
+    padding-left:5px !important;
+}
+
+.paddingLeft10Pixels
+{
+    padding-left:10px !important;
+}
+
+
+.paddingLeft20Pixels
+{
+    padding-left:20px !important;
+}
+
+.paddingLeft30Pixels
+{
+    padding-left:30px !important;
+}
+
+
+.padding3Pixels
+{
+    padding:3px !important;
+}
+
+.padding5Pixels
+{
+    padding:5px !important;
+}
+
+.padding10Pixels
+{
+    padding:10px !important;
+}
+
+
+.padding20Pixels
+{
+    padding:20px !important;
+}
+
+.padding30Pixels
+{
+    padding:30px !important;
+}
+
+
+.textAlignRight
+{
+    text-align:right !important;
+}
+
+.textAlignLeft
+{
+    text-align:left !important;
+}
+
+
+.floatLeft
+{
+   float:left !important;
+}  
+
+.floatRight
+{
+   float:right !important;
+}  
+
+.clearBoth
+{
+    clear:both !important;
+}

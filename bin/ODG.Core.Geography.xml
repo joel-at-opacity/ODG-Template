@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ODG.Core.Geography
+</name>
+</assembly>
+<members>
+<member name="T:ODG.Core.Geography.Country">
+	<summary>
+ A country.
+ </summary>
+	<remarks>Maps to the "Countries" table in the database.</remarks>
+</member><member name="T:ODG.Core.Geography.DistanceUnit">
+	<summary>
+ A unit of distance.
+ </summary>
+	<remarks>Maps to the "DistanceUnits" table in the database.</remarks>
+</member>
+</members>
+</doc>

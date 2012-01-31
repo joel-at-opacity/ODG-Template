@@ -1,0 +1,314 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ODG.Core
+</name>
+</assembly>
+<members>
+<member name="M:ODG.Core.DateTimeFunctions.ShortDate(System.Object)">
+	<summary>
+ Formats the provided value as a date.
+ </summary>
+	<param name="dateValue">The date to format.</param>
+	<returns>A short-date formatted string.</returns>
+</member><member name="M:ODG.Core.DateTimeFunctions.MediumDate(System.Object,System.Boolean)">
+	<summary>
+ Formats the provided value as a date.
+ </summary>
+	<param name="dateValue">The date to format.</param>
+	<param name="includeYear">Whether to inlude the year in the output or not.</param>
+	<returns>A medium-length date formatted string.</returns>
+</member><member name="M:ODG.Core.DateTimeFunctions.FormatDateAndTime(System.Object,System.Object)">
+	<summary>
+ Formats the provided date and time values as a short date &amp; time string
+ </summary>
+	<param name="dateValue">The date to format.</param>
+	<param name="timeValue">The time to format.</param>
+	<returns>A date and time in the format "mm/dd/yyyy at hh:mm am/pm"</returns>
+</member><member name="P:ODG.Core.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:ODG.Core.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:ODG.Core.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:ODG.Core.ConnectionFunctions.InsertRecordWithIdentity(System.String,System.String[],System.Object[])">
+	<summary>
+ Inserts a new record into the specified table, and returns the created identity.
+ </summary>
+	<param name="tableName">The name of the table to insert a record into.</param>
+	<param name="names">An array of the names of the fields to populate.</param>
+	<param name="values">An array of the values to populate the named fields with.</param>
+	<returns>The integer identity value for the inserted record.</returns>
+	<remarks>The values array's items must be in the same order as they are named in the names array.</remarks>
+</member><member name="M:ODG.Core.ConnectionFunctions.UpdateRecord(System.String,System.String[],System.Object[],System.String)">
+	<summary>
+ Updates a record (or records) in the specified table, using the provided values.
+ </summary>
+	<param name="tableName">The name of the table to insert a record into.</param>
+	<param name="names">An array of the names of the fields to populate.</param>
+	<param name="values">An array of the values to populate the named fields with.</param>
+	<param name="whereClause">The where clause for the update. Must start with the word "WHERE".</param>
+	<returns>The query used to update the data.</returns>
+	<remarks>The values array's items must be in the same order as they are named in the names array.</remarks>
+</member><member name="M:ODG.Core.ConnectionFunctions.DeleteRecords(System.String,System.String)">
+	<summary>
+ Deletes a record or records from the specified table which match the specified where clause.
+ </summary>
+	<param name="tableName">The name of the table to delete records from.</param>
+	<param name="whereClause">The clause which matches records to delete.</param>
+	<remarks>The where clause must be provided, but should not contain the word "where". 
+ (This is different to the update clause in <see cref="M:ODG.Core.ConnectionFunctions.UpdateRecord(System.String,System.String[],System.String[],System.String)"/>.)</remarks>
+</member><member name="M:ODG.Core.ConnectionFunctions.GetDictionary``2(System.String,System.String,System.String)">
+	<summary>
+ Gets a dictionary of items using the specified query.
+ </summary>
+	<typeparam name="TKey">The type of the dictionary's keys.</typeparam>
+	<typeparam name="TValue">The type of the dictionary's values.</typeparam>
+	<param name="query">The query to use to get the data.</param>
+	<param name="keyField">The name of the field to extract the keys from. This field must contain data of the specified key data type.</param>
+	<param name="valueField">The name of the field to extract the values from. This field must contain data of the specified value data type.</param>
+	<returns>A dictionary of each key and value field from the result set.</returns>
+</member><member name="M:ODG.Core.ConnectionFunctions.GetDictionary(System.String,System.String,System.String)">
+	<summary>
+ Gets a dictionary of items using the specified query.
+ </summary>
+	<param name="query">The query to use to get the data.</param>
+	<param name="keyField">The name of the field to extract the keys from. This field must contain string data.</param>
+	<param name="valueField">The name of the field to extract the values from. This field must contain integer data.</param>
+	<returns>A dictionary of each key and value field from the result set. 
+ The type of the keys is <see cref="T:System.String"/>, and the type of the values is <see cref="T:System.Int32"/>.</returns>
+</member><member name="M:ODG.Core.ConnectionFunctions.GetList``1(System.String,System.String)">
+	<summary>
+ Gets a list of items of the specified type using the specified query.
+ </summary>
+	<typeparam name="T">The type of the items in the list.</typeparam>
+	<param name="query">The query to use to get the data.</param>
+	<param name="valueField">The name of the field to extract the values from. This field must contain integer data.</param>
+	<returns>A list of items of the specified type as extracted from the specififed value field.</returns>
+	<remarks></remarks>
+</member><member name="M:ODG.Core.ConnectionFunctions.RecordExists(System.String,System.String)">
+	<summary>
+ Determines whether or not at least one record that meets the specified where clause exists.
+ </summary>
+	<param name="tableName">The name of the table to look for records in.</param>
+	<param name="whereClause">The where clause to filter records with.</param>
+	<returns><c>true</c> if records matching the criteria exist; <c>false</c> otherwise.</returns>
+	<remarks></remarks>
+</member><member name="M:ODG.Core.Email.Email.#ctor">
+	<summary>
+ Creates a new <see cref="T:ODG.Core.Email.Email"/>.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ODG.Core.Email.Email.#ctor(System.Int64)">
+	<summary>
+ Loads the <see cref="T:ODG.Core.Email.Email"/> with the specified id.
+ </summary>
+	<param name="id">The id of the <see cref="T:ODG.Core.Email.Email"/> to load.</param>
+	<remarks></remarks>
+</member><member name="M:ODG.Core.Email.Email.#ctor(ODG.Core.ISafeDataRecord)">
+	<summary>
+ Loads a <see cref="T:ODG.Core.Email.Email"/> from the provided <see cref="T:ODG.Core.ISafeDataRecord"/>.
+ </summary>
+	<param name="record">The <see cref="T:ODG.Core.ISafeDataRecord"/> to load the <see cref="T:ODG.Core.Email.Email"/> from.</param>
+	<remarks></remarks>
+</member><member name="P:ODG.Core.Email.Email.TableName">
+	<summary>
+ The name of the database table <see cref="T:ODG.Core.Email.Email"/> objects map to.
+ </summary>
+	<returns>The name of the database table <see cref="T:ODG.Core.Email.Email"/> objects map to.</returns>
+	<remarks></remarks>
+</member><member name="P:ODG.Core.Email.Email.IDFieldName">
+	<summary>
+ The name of the id field in the table <see cref="T:ODG.Core.Email.Email"/> objects map to.
+ </summary>
+	<returns>The name of the id field in the table <see cref="T:ODG.Core.Email.Email"/> objects map to.</returns>
+	<remarks></remarks>
+</member><member name="M:ODG.Core.Email.Email.GetPropertyFieldNames">
+	<summary>
+ Gets an array of the field names that this <see cref="T:ODG.Core.Email.Email"/> object's properties map to.
+ </summary>
+	<returns>A <see cref="T:System.String"/> array of the field names.</returns>
+	<remarks></remarks>
+</member><member name="M:ODG.Core.Email.Email.GetPropertyValues">
+	<summary>
+ Gets an array of the field values that this <see cref="T:ODG.Core.Email.Email"/> object's properties map to.
+ </summary>
+	<returns>A <see cref="T:System.Object"/> array of the field/property value.</returns>
+	<remarks></remarks>
+</member><member name="M:ODG.Core.Email.Email.SetPropertyDefaults">
+	<summary>
+ This method is called on creation of a new instance of <see cref="T:ODG.Core.Email.Email"/>. 
+ It is used to set default values for any read-only properties.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ODG.Core.Email.Email.LoadProperties(ODG.Core.ISafeDataRecord@)">
+	<summary>
+ Loads this <see cref="T:ODG.Core.Email.Email"/> object's properties from an <see cref="T:ODG.Core.ISafeDataRecord"/>.
+ </summary>
+	<param name="record">The <see cref="T:ODG.Core.ISafeDataRecord"/> to load the properties from.</param>
+</member><member name="M:ODG.Core.Email.Email.SaveDependencies">
+	<summary>
+ Save the <see cref="T:ODG.Core.Email.Email"/> object's dependent properties. 
+ These are usually collection/list properties of related objects.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ODG.Core.Email.Email.GetAll">
+	<summary>
+ Gets all of the <see cref="T:ODG.Core.Email.Email"/> objects from the database.
+ </summary>
+	<returns>A <see cref="T:ODG.Core.BusinessObjects.BusinessObjectList`1"/> containing all 
+ of the <see cref="T:ODG.Core.Email.Email"/>s in the database.</returns>
+	<remarks></remarks>
+</member><member name="M:ODG.Core.Email.Email.GetBusinessObjectList(System.String)">
+	<summary>
+ Gets a business object list of <see cref="T:ODG.Core.Email.Email"/>s, using the specified query
+ </summary>
+	<param name="query">The query to select the data for the list.</param>
+	<returns>A <see cref="T:ODG.Core.BusinessObjects.BusinessObjectList`1"/> containing all items returned by the query.</returns>
+	<remarks></remarks>
+</member><member name="T:ODG.Core.Email.Email">
+	<summary>
+ A <see cref="T:ODG.Core.BusinessObjects.BusinessObject"/> that represents a Email.
+ </summary>
+	<remarks>Maps to the "Core_Emails" table in the database.</remarks>
+</member><member name="M:ODG.Core.Email.EmailAttachment.#ctor">
+	<summary>
+ Creates a new <see cref="T:ODG.Core.Email.EmailAttachment"/>.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ODG.Core.Email.EmailAttachment.#ctor(System.Int64)">
+	<summary>
+ Loads the <see cref="T:ODG.Core.Email.EmailAttachment"/> with the specified id.
+ </summary>
+	<param name="id">The id of the <see cref="T:ODG.Core.Email.EmailAttachment"/> to load.</param>
+	<remarks></remarks>
+</member><member name="M:ODG.Core.Email.EmailAttachment.#ctor(ODG.Core.ISafeDataRecord)">
+	<summary>
+ Loads a <see cref="T:ODG.Core.Email.EmailAttachment"/> from the provided <see cref="T:ODG.Core.ISafeDataRecord"/>.
+ </summary>
+	<param name="record">The <see cref="T:ODG.Core.ISafeDataRecord"/> to load the <see cref="T:ODG.Core.Email.EmailAttachment"/> from.</param>
+	<remarks></remarks>
+</member><member name="P:ODG.Core.Email.EmailAttachment.TableName">
+	<summary>
+ The name of the database table <see cref="T:ODG.Core.Email.EmailAttachment"/> objects map to.
+ </summary>
+	<returns>The name of the database table <see cref="T:ODG.Core.Email.EmailAttachment"/> objects map to.</returns>
+	<remarks></remarks>
+</member><member name="P:ODG.Core.Email.EmailAttachment.IDFieldName">
+	<summary>
+ The name of the id field in the table <see cref="T:ODG.Core.Email.EmailAttachment"/> objects map to.
+ </summary>
+	<returns>The name of the id field in the table <see cref="T:ODG.Core.Email.EmailAttachment"/> objects map to.</returns>
+	<remarks></remarks>
+</member><member name="M:ODG.Core.Email.EmailAttachment.GetPropertyFieldNames">
+	<summary>
+ Gets an array of the field names that this <see cref="T:ODG.Core.Email.EmailAttachment"/> object's properties map to.
+ </summary>
+	<returns>A <see cref="T:System.String"/> array of the field names.</returns>
+	<remarks></remarks>
+</member><member name="M:ODG.Core.Email.EmailAttachment.GetPropertyValues">
+	<summary>
+ Gets an array of the field values that this <see cref="T:ODG.Core.Email.EmailAttachment"/> object's properties map to.
+ </summary>
+	<returns>A <see cref="T:System.Object"/> array of the field/property value.</returns>
+	<remarks></remarks>
+</member><member name="M:ODG.Core.Email.EmailAttachment.LoadProperties(ODG.Core.ISafeDataRecord@)">
+	<summary>
+ Loads this <see cref="T:ODG.Core.Email.EmailAttachment"/> object's properties from an <see cref="T:ODG.Core.ISafeDataRecord"/>.
+ </summary>
+	<param name="record">The <see cref="T:ODG.Core.ISafeDataRecord"/> to load the properties from.</param>
+</member><member name="M:ODG.Core.Email.EmailAttachment.GetAll">
+	<summary>
+ Gets all of the <see cref="T:ODG.Core.Email.EmailAttachment"/> objects from the database.
+ </summary>
+	<returns>A <see cref="T:ODG.Core.BusinessObjects.BusinessObjectList`1"/> containing all 
+ of the <see cref="T:ODG.Core.Email.EmailAttachment"/>s in the database.</returns>
+	<remarks></remarks>
+</member><member name="M:ODG.Core.Email.EmailAttachment.GetBusinessObjectList(System.String)">
+	<summary>
+ Gets a business object list of <see cref="T:ODG.Core.Email.EmailAttachment"/>s, using the specified query
+ </summary>
+	<param name="query">The query to select the data for the list.</param>
+	<returns>A <see cref="T:ODG.Core.BusinessObjects.BusinessObjectList`1"/> containing all items returned by the query.</returns>
+	<remarks></remarks>
+</member><member name="T:ODG.Core.Email.EmailAttachment">
+	<summary>
+ A <see cref="T:ODG.Core.BusinessObjects.BusinessObject"/> that represents a EmailAttachment.
+ </summary>
+	<remarks>Maps to the "Core_Emails_Attachments" table in the database.</remarks>
+</member><member name="M:ODG.Core.Email.EmailLink.#ctor">
+	<summary>
+ Creates a new <see cref="T:ODG.Core.Email.EmailLink"/>.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ODG.Core.Email.EmailLink.#ctor(System.Int64)">
+	<summary>
+ Loads the <see cref="T:ODG.Core.Email.EmailLink"/> with the specified id.
+ </summary>
+	<param name="id">The id of the <see cref="T:ODG.Core.Email.EmailLink"/> to load.</param>
+	<remarks></remarks>
+</member><member name="M:ODG.Core.Email.EmailLink.#ctor(ODG.Core.ISafeDataRecord)">
+	<summary>
+ Loads a <see cref="T:ODG.Core.Email.EmailLink"/> from the provided <see cref="T:ODG.Core.ISafeDataRecord"/>.
+ </summary>
+	<param name="record">The <see cref="T:ODG.Core.ISafeDataRecord"/> to load the <see cref="T:ODG.Core.Email.EmailLink"/> from.</param>
+	<remarks></remarks>
+</member><member name="P:ODG.Core.Email.EmailLink.TableName">
+	<summary>
+ The name of the database table <see cref="T:ODG.Core.Email.EmailLink"/> objects map to.
+ </summary>
+	<returns>The name of the database table <see cref="T:ODG.Core.Email.EmailLink"/> objects map to.</returns>
+	<remarks></remarks>
+</member><member name="P:ODG.Core.Email.EmailLink.IDFieldName">
+	<summary>
+ The name of the id field in the table <see cref="T:ODG.Core.Email.EmailLink"/> objects map to.
+ </summary>
+	<returns>The name of the id field in the table <see cref="T:ODG.Core.Email.EmailLink"/> objects map to.</returns>
+	<remarks></remarks>
+</member><member name="M:ODG.Core.Email.EmailLink.GetPropertyFieldNames">
+	<summary>
+ Gets an array of the field names that this <see cref="T:ODG.Core.Email.EmailLink"/> object's properties map to.
+ </summary>
+	<returns>A <see cref="T:System.String"/> array of the field names.</returns>
+	<remarks></remarks>
+</member><member name="M:ODG.Core.Email.EmailLink.GetPropertyValues">
+	<summary>
+ Gets an array of the field values that this <see cref="T:ODG.Core.Email.EmailLink"/> object's properties map to.
+ </summary>
+	<returns>A <see cref="T:System.Object"/> array of the field/property value.</returns>
+	<remarks></remarks>
+</member><member name="M:ODG.Core.Email.EmailLink.LoadProperties(ODG.Core.ISafeDataRecord@)">
+	<summary>
+ Loads this <see cref="T:ODG.Core.Email.EmailLink"/> object's properties from an <see cref="T:ODG.Core.ISafeDataRecord"/>.
+ </summary>
+	<param name="record">The <see cref="T:ODG.Core.ISafeDataRecord"/> to load the properties from.</param>
+</member><member name="M:ODG.Core.Email.EmailLink.GetAll">
+	<summary>
+ Gets all of the <see cref="T:ODG.Core.Email.EmailLink"/> objects from the database.
+ </summary>
+	<returns>A <see cref="T:ODG.Core.BusinessObjects.BusinessObjectList`1"/> containing all 
+ of the <see cref="T:ODG.Core.Email.EmailLink"/>s in the database.</returns>
+	<remarks></remarks>
+</member><member name="M:ODG.Core.Email.EmailLink.GetBusinessObjectList(System.String)">
+	<summary>
+ Gets a business object list of <see cref="T:ODG.Core.Email.EmailLink"/>s, using the specified query
+ </summary>
+	<param name="query">The query to select the data for the list.</param>
+	<returns>A <see cref="T:ODG.Core.BusinessObjects.BusinessObjectList`1"/> containing all items returned by the query.</returns>
+	<remarks></remarks>
+</member><member name="T:ODG.Core.Email.EmailLink">
+	<summary>
+ A <see cref="T:ODG.Core.BusinessObjects.BusinessObject"/> that represents a EmailLink.
+ </summary>
+	<remarks>Maps to the "Core_Emails_Links" table in the database.</remarks>
+</member>
+</members>
+</doc>

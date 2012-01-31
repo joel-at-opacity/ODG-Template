@@ -1,0 +1,74 @@
+﻿.darkBlueColor
+{
+    color: #002971;
+}
+
+.blueColor
+{
+    color: #015aac;
+}
+
+.lightBlueColor
+{
+    color: #295ea4;
+}
+
+.whiteColor
+{
+    color:#FFFFFF;
+}
+
+.whiteColor a
+{
+    color:#FFFFFF;
+}
+
+.whiteBackgroundColor
+{
+    color:#FFFFFF;
+}
+
+
+.grayColor
+{
+    color:#5a5a5a;
+}
+
+.grayColor a
+{
+    color:#5a5a5a;
+    text-decoration:underline;
+}
+
+
+.darkBlueBackgroundColor
+{
+    background-color: #002971;
+}
+
+.blueBackgroundColor
+{
+    background-color: #015aac;
+}
+
+.lightBlueBackgroundColor
+{
+    background-color: #295ea4;
+}
+
+
+.red
+{
+    color:#e51937;
+}
+
+.redBackgroundColor
+{
+    background-color:#e51937;
+}
+
+
+.gray
+{
+    color:#575757;
+}
